@@ -1,0 +1,25 @@
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+      width: 90%; /* Adjust container width for smaller screens */
+    }
+  
+    .header,
+    .navbar,
+    .footer {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  }
+  
+  /* Media queries for even smaller screens */
+  @media screen and (max-width: 480px) {
+    .container {
+      width: 100%; /* Adjust container width for even smaller screens */
+    }
+  
+    .header,
+    .navbar,
+    .footer {
+      padding: 5px; /* Further reduce padding for very small screens */
+    }
+  }

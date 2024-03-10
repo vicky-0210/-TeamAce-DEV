@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Chat Example</title>
+    <style>
+        #localVideo, #remoteVideos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        video {
+            margin: 10px;
+            max-width: 400px;
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="localVideo"></div>
+    <div id="remoteVideos"></div>
+
+    <script src="https://simplewebrtc.com/latest-v3.js"></script>
+    <script>
+        // Initialize SimpleWebRTC
+        var webrtc = new SimpleWebRTC({
+            localVideoEl: 'localVideo', // Element to show local video
+            remoteVideosEl: 'remoteVideos', // Element to show remote videos
+            autoRequestMedia: true, // Automatically request access to user media
+        });
+
+        // Join a room when ready
+        webrtc.on('readyToCall', function () {
+            // Prompt the user to enter a room name
+            var roomName = prompt('Enter a room name:');
+            if (roomName) {
+                webrtc.joinRoom(roomName);
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+<script>window.addEventListener('load', function () { var el = document.createElement('script'); el.setAttribute('src', 'https://client.consolto.com/iframeApp/iframeApp.js'); el.id = 'et-iframe'; el.async = true; el.setAttribute('data-widgetId', '65ecb5b2dcea66937739b9ee'); el.setAttribute('data-version', 0.5); el.setAttribute('data-test', false); document.body.appendChild(el); }); </script>

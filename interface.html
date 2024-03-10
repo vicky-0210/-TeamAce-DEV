@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleDropdown() {
+            var dropdownMenu = document.getElementById("myDropdown");
+            dropdownMenu.classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="LinguaConnect">
+            </div>
+            <div class="menu">
+                <span class="navbar">
+                    
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn">Log In</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="http://127.0.0.1:3000/Hackathon/student.html#">As Student</a>
+                            <a href="http://127.0.0.1:5500/Hackathon/teacher.html#">As Teacher</a>
+                        </div>
+                    </div>
+                    <a class="join" href="http://127.0.0.1:3000/Hackathon/login.html">Join Lingua</a>
+                </span>
+            </div>
+        </nav>
+    </header>
+    <div class="grid">
+        <div class="main">
+            <p class="b1">Learn Languages with <span>Lingua</span></p>
+            <div class="b2">Learn&Upskill with our top educators</div>
+            <span class="svg_1"><img src="https://www.svgrepo.com/show/327318/language.svg">
+                <img style="width: auto; aspect-ratio: 1"
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-globe-396-433260.png"></span>
+        </div>
+        <div class="image"><img style="height: 95vh; width: 50vw;"
+                src="https://lh3.googleusercontent.com/pw/AP1GczMUi-vCRVb0avtAEW116tY1nHxUaKP9s3nd3mAKJyR1qnkTCIzy6Sl252VsGDrWjptX5O3sGvypokxUmR22W-rViJYOeHowfUpIJnyyZHwBpBcpAFb_LQq2jz1Fe669CjHaVlIcrnqUOYij0fbAQo6jo6U2TALG3lOip0RfnxAC5pEd2wSI4QA_sLIiIBLsULOcu3FIRhHLGx-yWxaATSfYEXpdmfZ3CbLYZeM0LvDgCUPYUqAasBZ0Sv_GtiMmwQycUzV8EIl3VChzeUWSFVudYZIbvoLfuGXX0CCtNFfohYQ4M6pJDzzEU7qBVVJOV9821uCyfmFDOPFOIDPsYgMO66krlJ8-pTzLOwpRkzO1qU_Yy3HMYKjqnJeBwISgd1-E8vZ-c27p7borSj_vupykIYo183Gcrdz9AjaWErZri7Kql6WlZhdf7WacoasmEnpVFl8ydt38xOTBZgU_lERsYb9obRr_jD7H2dtvb72ubNvPYLpVb7vCwuDwANR36buvCp9SpmrkQN9xwgBo71ot53_GW5jX2Xh8EoyEhtzYjtsSgUF5Iru2rXTFXjWJyUIMBBrQFsORDIccwdTsu-PoSBlrc2FHBPUkuO_0lRyRjAR-_8b1JvJ8PgcPxV9b1dICTF-3Enmrikn222trCtyArjVG-DjAYYLC-7C-C9t-JyeEEydqmPD0xHU_oJvXmbuWlO8DyTLEIZddgagfXUEQibyYS5pJ41ssMMZx9COS22P7I5bDNPAJmBdBzQavZOzQnUSfd6QJENQzpDw3UeycTmdhn4X1GBdn2n7pNJaYgMIgBM8bdiOFpC26NKdy-0QDqzeEhoHjgNGSuRf8f5lu0FIJJdLR-BUOLBvzGhF39MlTk9THcCB1jxEtso3mio3upSmA84ZEr3q2EjsoCpWAWw7WJ3WRzs4OyQAu-sUzypucN7u1jpCtDVSJbfZP8OQY9jMCkBoQpExTDXedXPqkuJyvBO8mBK8u20D9M415CM4dZQswTKQNnX50NkPuI6KYLIF58mgGRvixY1vxNUBUdVFUBSCWqA=w1300-h1300-s-no-gm?authuser=4">
+        </div>
+    </div>
+    <div class="grid_2">
+        <div class="item">
+            <img src="https://www.svgrepo.com/show/52215/bell.svg">
+            <div class="heading">Subscribe Lingua</div>
+            <div class="foot">Learn Languages like Never before</div>
+        </div>
+        <div class="item">
+            <img style="height: 100px; width: auto; aspect-ratio: 1;"
+                src="https://www.iconpacks.net/icons/1/free-video-icon-818-thumb.png">
+            <div class="heading">Learn Virtually</div>
+            <div class="foot">Access to Video Lectures</div>
+        </div>
+        <div class="item">
+            <img src="https://static.thenounproject.com/png/1616157-200.png">
+            <div class="heading">Speak Fluently</div>
+            <div class="foot">Master Languages with Lingua</div>
+        </div>
+    </div>
+    <div class="lang">
+        <div>Telugu<img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Telugu_Translation_icon_-_01.svg/512px-Telugu_Translation_icon_-_01.svg.png"
+                alt="Telugu"></div>
+        <div>Hindi<img src="https://cdn.iconscout.com/icon/free/png-256/free-translation-2646706-2194192.png"
+                alt="Hindi"></div>
+        <div>English<img
+                src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/english-speaking-icon.png"
+                alt="English"></div>
+        <div>Japanese<img src="https://cdn2.iconfinder.com/data/icons/language-studies-glyph/32/linguistics-19-512.png"
+                alt="Japanese"></div>
+        <div>Spanish<img src="https://cdn-icons-png.flaticon.com/512/6724/6724649.png" alt="Spanish"></div>
+        <div>Korean<img src="https://static.thenounproject.com/png/902426-200.png" alt="Korean"></div>
+        <div class="more"> & More...</div>
+    </div>
+</body>
+
+</html>
